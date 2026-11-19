@@ -56,7 +56,7 @@ const PROVISIONAL_PDF = "/catalogos/catalogo-provisional.pdf";
 const HELMETS_PDF = "/catalogos/catalogo-cascos.pdf";
 
 // Catálogo oficial de chalecos
-const CHALECOS_PDF = "/catalogos/catalogo-chalecos.pdf";
+const CHALECOS_PDF = "/catalogos/catalogo_chalecos.pdf";
 
 /* ========================================
    CATÁLOGOS DISPONIBLES
@@ -159,7 +159,7 @@ const catalogItems: CatalogItem[] = [
     category: "Protección personal",
     icon: ShieldCheck,
     pdf: CHALECOS_PDF,
-    fileName: "catalogo-chalecos.pdf",
+    fileName: "catalogo_chalecos.pdf",
   },
 
   {
