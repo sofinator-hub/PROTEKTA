@@ -102,7 +102,7 @@ export default function Footer() {
                   className="shrink-0 text-[#ff6a00]"
                 />
 
-                <span>56 1051 4050</span>
+                <span>55 64997750</span>
 
                 <ArrowUpRight
                   size={13}

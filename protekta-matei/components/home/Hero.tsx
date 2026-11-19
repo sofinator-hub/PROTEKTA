@@ -13,7 +13,7 @@ export default function Hero() {
       {/* DESKTOP BACKGROUND */}
       <div className="absolute inset-0 z-0 hidden md:block">
         <Image
-          src="/images/industries/urbano1.png"
+          src="/images/industries/hero-seguridad.png"
           alt="Mobiliario urbano industrial PROTEKTA"
           fill
           priority
