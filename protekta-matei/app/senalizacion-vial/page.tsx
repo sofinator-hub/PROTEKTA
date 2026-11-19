@@ -38,7 +38,7 @@ export default function SenalizacionVialPage() {
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
-              href="mailto:matei_company@hotmail.com?subject=Informacion%20sobre%20senalizacion%20vial"
+              href="mailto:pany@hotmail.com?subject=Informacion%20sobre%20senalizacion%20vial"
               className="inline-flex min-h-12 items-center justify-center gap-3 bg-[#ff6a00] px-6 py-4 text-xs font-bold uppercase tracking-wide text-black transition-colors hover:bg-white"
             >
               Solicitar información

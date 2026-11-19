@@ -34,7 +34,7 @@ const footerLinks = [
       { name: "Nosotros", href: "/nosotros" },
       {
         name: "Contacto",
-        href: "mailto:matei_company@hotmail.com",
+        href: "mailto:pany@hotmail.com",
       },
     ],
   },
@@ -75,7 +75,7 @@ export default function Footer() {
             <div className="mt-7 space-y-4">
 
               <a
-                href="mailto:matei_company@hotmail.com"
+                href="mailto:protektatlalpan@gmail.com"
                 className="group flex items-start gap-3 text-sm text-white/50 transition-colors hover:text-white"
               >
                 <Mail
@@ -84,7 +84,7 @@ export default function Footer() {
                 />
 
                 <span className="break-all">
-                  matei_company@hotmail.com
+                  protektatlalpan@gmail.com
                 </span>
 
                 <ArrowUpRight
@@ -94,7 +94,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="tel:+525610514050"
+                href="tel:+525564997750"
                 className="group flex items-center gap-3 text-sm text-white/50 transition-colors hover:text-white"
               >
                 <Phone
@@ -193,7 +193,7 @@ export default function Footer() {
             </div>
 
             <a
-              href="mailto:matei_company@hotmail.com?subject=Consulta%20sobre%20un%20proyecto"
+              href="mailto:protektatlalpan@gmail.com?subject=Consulta%20sobre%20un%20proyecto"
               className="group inline-flex min-h-12 w-fit items-center gap-4 bg-[#ff6a00] px-6 py-4 text-xs font-bold uppercase tracking-wide text-black transition-colors duration-300 hover:bg-white"
             >
               Hablemos

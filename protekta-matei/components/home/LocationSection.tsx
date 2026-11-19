@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 const googleMapsUrl =
-  "https://maps.app.goo.gl/4y91kyDuZqyZ8uq58?g_st=aw";
+  "https://maps.app.goo.gl/36g1NfG1AgQA9d1NA?g_st=aw";
 
 export default function LocationSection() {
   return (
@@ -112,7 +112,7 @@ export default function LocationSection() {
 
               {/* PHONE */}
               <a
-                href="tel:+525610514050"
+                href="tel:+525564997750"
                 className="group flex gap-4"
               >
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center border border-white/10 text-[#ff6a00] transition-all duration-300 group-hover:border-[#ff6a00] group-hover:bg-[#ff6a00] group-hover:text-black">
@@ -132,7 +132,7 @@ export default function LocationSection() {
 
               {/* EMAIL */}
               <a
-                href="mailto:matei_company@hotmail.com"
+                href="mailto:protektatlalpan@gmail.com"
                 className="group flex gap-4"
               >
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center border border-white/10 text-[#ff6a00] transition-all duration-300 group-hover:border-[#ff6a00] group-hover:bg-[#ff6a00] group-hover:text-black">
@@ -145,7 +145,7 @@ export default function LocationSection() {
                   </p>
 
                   <p className="mt-1 break-all text-sm font-medium transition-colors group-hover:text-[#ff6a00]">
-                    matei_company@hotmail.com
+                    protektatlalpan@gmail.com
                   </p>
                 </div>
               </a>

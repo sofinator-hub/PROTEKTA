@@ -55,23 +55,23 @@ const contactDetails: {
 }[] = [
   {
     title: "Correo",
-    value: "matei_company@hotmail.com",
+    value: "protektatlalpan@gmail.com",
     description: "Consultas, información y cotizaciones.",
-    href: "mailto:matei_company@hotmail.com?subject=Consulta%20PROTEKTA",
+    href: "mailto:protektatlalpan@gmail.com?subject=Consulta%20PROTEKTA",
     icon: Mail,
   },
   {
     title: "Teléfono",
     value: "56 1051 4050",
     description: "Contacto telefónico con el equipo.",
-    href: "tel:+525610514050",
+    href: "tel:+525564997750",
     icon: Phone,
   },
   {
     title: "Ubicación",
     value: "Abrir ubicación en Google Maps",
     description: "Consulta la ubicación y organiza tu visita.",
-    href: "https://maps.app.goo.gl/4y91kyDuZqyZ8uq58?g_st=aw",
+    href: "https://maps.app.goo.gl/36g1NfG1AgQA9d1NA?g_st=aw",
     icon: MapPin,
     external: true,
   },
@@ -149,7 +149,7 @@ export default function ContactoPage() {
     ].join("\n");
 
     const mailtoUrl =
-      `mailto:matei_company@hotmail.com?` +
+      `mailto:protektatlalpan@gmail.com?` +
       new URLSearchParams({
         subject,
         body,
@@ -160,7 +160,7 @@ export default function ContactoPage() {
   }
 
   const whatsappHref =
-    "https://wa.me/525610514050?text=" +
+    "https://wa.me/525564997750?text=" +
     encodeURIComponent(
       "Hola, me interesa solicitar información y una cotización de PROTEKTA."
     );
@@ -521,10 +521,10 @@ export default function ContactoPage() {
                         de correo y pulsa Enviar para completarla. Si no se
                         abre, escribe a{" "}
                         <a
-                          href="mailto:matei_company@hotmail.com"
+                          href="mailto:protektatlalpan@gmail.com"
                           className="text-white underline decoration-[#ff6a00] underline-offset-4"
                         >
-                          matei_company@hotmail.com
+                          protektatlalpan@gmail.com
                         </a>
                         .
                       </p>

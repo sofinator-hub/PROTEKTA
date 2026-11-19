@@ -649,13 +649,13 @@ export default function CatalogoPage() {
               </p>
 
               <p className="mt-2 text-sm text-white/40">
-                matei_company@hotmail.com · 56 1051 4050
+                protektatlalpan@gmail.com · 5564997750
               </p>
 
             </div>
 
             <a
-              href="mailto:matei_company@hotmail.com?subject=Consulta%20sobre%20catalogos%20PROTEKTA"
+              href="mailto:protektatlalpan@gmail.com?subject=Consulta%20sobre%20catalogos%20PROTEKTA"
               className="inline-flex min-h-12 items-center justify-center gap-3 border border-white/15 px-5 py-4 text-[10px] font-bold uppercase tracking-wide transition-colors hover:border-[#ff6a00] hover:bg-white/[0.025]"
             >
               Contactar a MATEI

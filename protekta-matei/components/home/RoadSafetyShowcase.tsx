@@ -182,7 +182,7 @@ export default function RoadSafetyShowcase() {
               </Link>
 
               <a
-                href="mailto:matei_company@hotmail.com?subject=Informacion%20sobre%20senalizacion%20vial"
+                href="mailto:protektatlalpan@gmail.com?subject=Informacion%20sobre%20senalizacion%20vial"
                 className="mt-5 inline-flex items-center gap-2 text-[10px] text-white/40 transition-colors hover:text-white"
               >
                 Consultas para tu proyecto
