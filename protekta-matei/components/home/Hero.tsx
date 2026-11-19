@@ -25,7 +25,7 @@ export default function Hero() {
       {/* MOBILE BACKGROUND */}
       <div className="absolute inset-0 z-0 md:hidden">
         <Image
-          src="/images/industries/urbano-mobile.png"
+          src="/images/industries/hero-seguridad2.png"
           alt="Mobiliario urbano industrial PROTEKTA"
           fill
           priority
