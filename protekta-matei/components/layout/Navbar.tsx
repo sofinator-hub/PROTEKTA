@@ -1,7 +1,7 @@
 
 "use client";
 
-import Link from "next/link";
+import Link from "next/link"; 
 import MobileMenu from "@/components/layout/MobileMenu";
 
 const menuItems = [
@@ -13,7 +13,7 @@ const menuItems = [
 ];
 
 export default function Navbar() {
-  return (
+  return ( 
     <>
       {/* DESKTOP NAVBAR */}
       <header className="fixed left-0 right-0 top-0 z-50 hidden px-8 pt-4 lg:block">
@@ -53,3 +53,4 @@ export default function Navbar() {
     </>
   );
 }
+ 
