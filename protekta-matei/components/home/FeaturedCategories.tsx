@@ -1,6 +1,7 @@
+
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const categories = [
@@ -56,47 +57,82 @@ const categories = [
 ];
 
 export default function FeaturedCategories() {
+  const reduceMotion = useReducedMotion();
+
   return (
-    <section className="relative overflow-hidden bg-[#080808] py-24 md:py-32">
-
+    <section
+      className="
+        relative isolate overflow-hidden
+        bg-[#080808]
+        py-16 sm:py-20 md:py-24 lg:py-32
+      "
+    >
       {/* DECORATION */}
-      <div className="pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-[#ff6a00]/5 blur-[140px]" />
+      <div
+        className="
+          pointer-events-none absolute right-0 top-0
+          h-[250px] w-[250px]
+          rounded-full bg-[#ff6a00]/5 blur-[100px]
+          sm:h-[400px] sm:w-[400px]
+          md:h-[500px] md:w-[500px] md:blur-[140px]
+        "
+      />
 
-      <div className="relative z-10 mx-auto max-w-[1500px] px-6 md:px-10 lg:px-16">
-
+      <div
+        className="
+          relative z-10 mx-auto
+          w-full max-w-[1500px]
+          px-5 sm:px-8 md:px-10 lg:px-16
+        "
+      >
         {/* HEADER */}
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
+          initial={reduceMotion ? false : { opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{
             once: true,
-            amount: 0.3,
+            amount: 0.1,
           }}
           transition={{
-            duration: 0.7,
+            duration: 0.6,
+            ease: "easeOut",
           }}
-          className="mb-14 flex flex-col justify-between gap-8 md:flex-row md:items-end"
+          className="
+            mb-10 flex min-w-0 flex-col
+            gap-6 sm:mb-12 sm:gap-8
+            md:mb-14 md:flex-row md:items-end md:justify-between
+          "
         >
-
-          <div>
-
+          <div className="min-w-0">
             {/* EYEBROW */}
-            <div className="mb-5 flex items-center gap-4">
-              <span className="h-[2px] w-10 bg-[#ff6a00]" />
+            <div className="mb-5 flex items-center gap-3 sm:gap-4">
+              <span className="h-[2px] w-8 shrink-0 bg-[#ff6a00] sm:w-10" />
 
-              <span className="text-[10px] uppercase tracking-[0.35em] text-white/40">
+              <span
+                className="
+                  text-[9px] font-semibold uppercase
+                  tracking-[0.25em] text-white/40
+                  sm:text-[10px] sm:tracking-[0.35em]
+                "
+              >
                 Explora nuestra selección
               </span>
             </div>
 
             {/* TITLE */}
-            <h2 className="max-w-3xl text-[clamp(2.8rem,5vw,5.5rem)] font-black uppercase leading-[0.9] tracking-[-0.05em]">
+            <h2
+              className="
+                max-w-3xl
+                text-[clamp(2.35rem,9vw,5.5rem)]
+                font-black uppercase
+                leading-[0.92]
+                tracking-[-0.06em]
+                text-white
+                sm:text-[clamp(3rem,6vw,5.5rem)]
+                md:leading-[0.9]
+                md:tracking-[-0.05em]
+              "
+            >
               Todo lo que
               <br />
               necesitas para
@@ -105,13 +141,11 @@ export default function FeaturedCategories() {
                 estar seguro.
               </span>
             </h2>
-
-          </div>
+          </div> 
 
           {/* DESCRIPTION */}
-          <div className="max-w-sm md:pb-2">
-
-            <p className="text-sm leading-relaxed text-white/45">
+          <div className="w-full max-w-sm md:pb-2">
+            <p className="text-sm leading-7 text-white/45 sm:text-base">
               Encuentra soluciones de protección diseñadas
               para responder a las exigencias de cada
               industria y cada jornada de trabajo.
@@ -119,107 +153,206 @@ export default function FeaturedCategories() {
 
             <a
               href="/catalogo"
-              className="group mt-6 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-wide text-white"
+              className="
+                group mt-6 inline-flex min-h-11
+                items-center gap-3
+                text-xs font-bold uppercase tracking-wide
+                text-white
+                transition-colors duration-300
+                hover:text-[#ff6a00]
+                focus-visible:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-[#ff6a00]
+              "
             >
               Ver catálogo completo
 
-              <span className="flex h-8 w-8 items-center justify-center border border-white/20 transition-all duration-300 group-hover:border-[#ff6a00] group-hover:bg-[#ff6a00] group-hover:text-black">
+              <span
+                className="
+                  flex h-9 w-9 shrink-0 items-center justify-center
+                  border border-white/20
+                  transition-colors duration-300
+                  group-hover:border-[#ff6a00]
+                  group-hover:bg-[#ff6a00]
+                  group-hover:text-black
+                "
+              >
                 <ArrowUpRight
-                  size={14}
-                  className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  size={15}
+                  className="
+                    transition-transform duration-300
+                    group-hover:translate-x-0.5
+                    group-hover:-translate-y-0.5
+                  "
                 />
               </span>
-            </a>
-
-          </div>
-
+            </a> 
+          </div> 
         </motion.div>
 
         {/* CATEGORY GRID */}
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
-
-          {categories.map((category, index) => (
-            <motion.a
+        <div
+          className="
+            grid grid-cols-1 gap-3
+            sm:grid-cols-2
+            md:grid-cols-3
+            md:gap-4
+          "
+        >
+          {categories.map((category) => (
+            <a
               key={category.title}
               href="/catalogo"
-              initial={{
-                opacity: 0,
-                y: 40,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-                amount: 0.15,
-              }}
-              transition={{
-                delay: index * 0.08,
-                duration: 0.6,
-              }}
-              className={`group relative min-h-[300px] overflow-hidden border border-white/10 bg-[#111111] ${category.className}`}
-            >
-
+              className={`
+                group relative isolate
+                block min-w-0
+                min-h-[260px]
+                overflow-hidden
+                border border-white/10
+                bg-[#111111]
+                outline-none
+                transition-colors duration-300
+                hover:border-[#ff6a00]/50
+                focus-visible:ring-2
+                focus-visible:ring-[#ff6a00]
+                focus-visible:ring-offset-2
+                focus-visible:ring-offset-black
+                sm:min-h-[300px]
+                md:min-h-[320px]
+                lg:min-h-[360px]
+                ${category.className}
+              `}
+            > 
               {/* IMAGE */}
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-110"
+                className="
+                  absolute inset-0
+                  bg-cover bg-center
+                  transition-transform duration-700 ease-out
+                  md:group-hover:scale-105
+                "
                 style={{
-                  backgroundImage: `url(${category.image})`,
+                  backgroundImage: `url("${category.image}")`,
                 }}
               />
 
               {/* DARK OVERLAY */}
-              <div className="absolute inset-0 bg-black/35 transition-all duration-500 group-hover:bg-black/20" />
+              <div
+                className="
+                  absolute inset-0
+                  bg-black/40
+                  transition-colors duration-500
+                  md:group-hover:bg-black/25
+                "
+              />
 
               {/* GRADIENT */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+              <div
+                className="
+                  absolute inset-0
+                  bg-gradient-to-t
+                  from-black via-black/25 to-transparent
+                "
+              />
 
               {/* ORANGE LIGHT */}
-              <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-[#ff6a00]/0 blur-[80px] transition-all duration-700 group-hover:bg-[#ff6a00]/20" />
+              <div
+                className="
+                  pointer-events-none absolute
+                  -right-20 -top-20
+                  h-48 w-48 rounded-full
+                  bg-[#ff6a00]/0 blur-[80px]
+                  transition-colors duration-700
+                  md:group-hover:bg-[#ff6a00]/20
+                "
+              />
 
               {/* NUMBER */}
-              <span className="absolute right-6 top-6 z-10 text-[10px] tracking-[0.2em] text-white/60 transition-colors duration-300 group-hover:text-[#ff6a00]">
+              <span
+                className="
+                  absolute right-5 top-5 z-10
+                  text-[10px] tracking-[0.2em]
+                  text-white/60
+                  transition-colors duration-300
+                  md:right-6 md:top-6
+                  md:group-hover:text-[#ff6a00]
+                "
+              >
                 {category.number}
               </span>
 
               {/* CONTENT */}
-              <div className="absolute bottom-0 left-0 right-0 z-10 p-7">
-
-                <div className="flex items-end justify-between gap-4">
-
-                  <div>
-
-                    <h3 className="text-2xl font-bold uppercase tracking-tight text-white transition-transform duration-500 group-hover:translate-x-2">
+              <div
+                className="
+                  absolute bottom-0 left-0 right-0 z-10
+                  p-5 sm:p-6 md:p-7
+                "
+              >
+                <div className="flex items-end justify-between gap-3">
+                  <div className="min-w-0">
+                    <h3
+                      className="
+                        text-xl font-bold uppercase
+                        tracking-tight text-white
+                        transition-transform duration-500
+                        sm:text-2xl
+                        md:group-hover:translate-x-2
+                      "
+                    >
                       {category.title}
                     </h3>
 
-                    <p className="mt-2 text-[10px] uppercase tracking-[0.18em] text-white/55">
+                    <p
+                      className="
+                        mt-2 text-[9px] uppercase
+                        tracking-[0.15em] text-white/55
+                        sm:text-[10px]
+                        sm:tracking-[0.18em]
+                      "
+                    >
                       {category.description}
-                    </p>
-
+                    </p> 
                   </div>
 
                   {/* ARROW */}
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 bg-black/20 text-white transition-all duration-500 group-hover:border-[#ff6a00] group-hover:bg-[#ff6a00] group-hover:text-black">
+                  <div
+                    className="
+                      flex h-9 w-9 shrink-0
+                      items-center justify-center
+                      border border-white/30
+                      bg-black/20 text-white
+                      transition-colors duration-300
+                      sm:h-10 sm:w-10
+                      md:group-hover:border-[#ff6a00]
+                      md:group-hover:bg-[#ff6a00]
+                      md:group-hover:text-black
+                    "
+                  >
                     <ArrowUpRight
                       size={16}
-                      className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                      className="
+                        transition-transform duration-300
+                        md:group-hover:translate-x-0.5
+                        md:group-hover:-translate-y-0.5
+                      "
                     />
-                  </div>
-
-                </div>
-
+                  </div> 
+                </div> 
               </div>
 
               {/* TOP BORDER */}
-              <div className="absolute left-0 right-0 top-0 h-[2px] origin-left scale-x-0 bg-[#ff6a00] transition-transform duration-500 group-hover:scale-x-100" />
-
-            </motion.a>
+              <div
+                className="
+                  absolute left-0 right-0 top-0
+                  h-[2px] origin-left scale-x-0
+                  bg-[#ff6a00]
+                  transition-transform duration-500
+                  md:group-hover:scale-x-100
+                "
+              />
+            </a>
           ))}
-
-        </div>
-
+        </div> 
       </div>
     </section>
   );
