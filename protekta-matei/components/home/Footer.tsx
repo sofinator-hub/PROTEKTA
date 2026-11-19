@@ -41,7 +41,7 @@ const footerLinks = [
 ];
 
 const locationUrl =
-  "https://maps.app.goo.gl/4y91kyDuZqyZ8uq58?g_st=aw";
+  "https://maps.app.goo.gl/36g1NfG1AgQA9d1NA?g_st=aw";
 
 export default function Footer() {
   return (
