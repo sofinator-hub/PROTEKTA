@@ -115,7 +115,7 @@ export default function LocationSection() {
                 href="tel:+525564997750"
                 className="group flex gap-4"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center border border-white/10 text-[#ff6a00] transition-all duration-300 group-hover:border-[#ff6a00] group-hover:bg-[#ff6a00] group-hover:text-black">
+                <div className="flex h-12 w-11 shrink-0 items-center justify-center border border-white/10 text-[#ff6a00] transition-all duration-300 group-hover:border-[#ff6a00] group-hover:bg-[#ff6a00] group-hover:text-black">
                   <Phone size={18} />
                 </div>
 
