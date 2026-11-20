@@ -125,7 +125,7 @@ export default function LocationSection() {
                   </p>
 
                   <p className="mt-1 text-sm font-medium transition-colors group-hover:text-[#ff6a00]">
-                    56 1051 4050
+                    5564997750
                   </p>
                 </div>
               </a>

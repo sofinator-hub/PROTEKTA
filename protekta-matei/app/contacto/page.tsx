@@ -62,7 +62,7 @@ const contactDetails: {
   },
   {
     title: "Teléfono",
-    value: "556499775",
+    value: "5564997750",
     description: "Contacto telefónico con el equipo.",
     href: "tel:+525564997750",
     icon: Phone,
