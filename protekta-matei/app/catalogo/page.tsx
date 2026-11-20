@@ -56,8 +56,43 @@ const PROVISIONAL_PDF = "/catalogos/catalogo-provisional.pdf";
 const HELMETS_PDF = "/catalogos/catalogo-cascos.pdf";
 
 // Catálogo oficial de chalecos
-const CHALECOS_PDF = "/catalogos/catalogo_chalecos.pdf";
+const CHALECOS_PDF = "/catalogos/catalogo-chalecos-protekta.pdf";
 
+// Catálogo oficial de lentes 
+const GLASSES_PDF = "/catalogos/catalogo-lentes-protekta.pdf";
+
+// Catálogo oficial de guantes
+const GLOVES_PDF = "/catalogos/catalogo-guantes-protekta.pdf";
+
+// Catálogo oficial de calzado
+const BOOTS_PDF = "/catalogos/catalogo-calzado-protekta.pdf";
+
+// Catálogo oficial de respiradores
+const RESPIRADORES_PDF = "/catalogos/catalogo-respiradores-protekta.pdf";
+
+// Catálogo oficial de visibilidad
+const VISIBILIDAD_PDF = "/catalogos/catalogo-visibilidad-protekta.pdf";
+
+// Catálogo oficial de conos
+const CONOS_PDF = "/catalogos/catalogo-conos-protekta.pdf";
+
+// Catálogo oficial de trafitambos
+const TRAFITAMBOS_PDF = "/catalogos/catalogo-trafitambos-protekta.pdf";
+
+// Catálogo oficial de barreras viales
+const BARRERAS_PDF = "/catalogos/catalogo-barreras-viales.pdf";
+
+// Catálogo oficial de topes de goma
+const TOPES_PDF = "/catalogos/catalogo-topes-protekta.pdf";
+
+// Catálogo oficial de botes de acero
+const BOTES_PDF = "/catalogos/catalogo-botes-protekta.pdf";
+
+// Catálogo oficial de goggles
+const GOGGLES_PDF = "/catalogos/catalogo-goggles-protekta.pdf";
+
+// Catálogo oficial de bandereros
+const BANDEREROS_PDF = "/catalogos/catalogo-bandereros-protekta.pdf";
 /* ========================================
    CATÁLOGOS DISPONIBLES
 ======================================== */
@@ -81,7 +116,7 @@ const catalogItems: CatalogItem[] = [
     category: "Protección personal",
     icon: HardHat,
     pdf: HELMETS_PDF,
-    fileName: "catalogo-cascos-protekta.pdf",
+    fileName: "catalogo-cascos.pdf",
   },
 
   {
@@ -97,6 +132,8 @@ const catalogItems: CatalogItem[] = [
     ],
     category: "Protección personal",
     icon: Glasses,
+    pdf: GLASSES_PDF,
+    fileName: "catalogo-lentes-protekta.pdf",
   },
 
   {
@@ -112,6 +149,9 @@ const catalogItems: CatalogItem[] = [
     ],
     category: "Protección personal",
     icon: Hand,
+    pdf: GLOVES_PDF,
+    fileName: "catalogo-guantes-protekta.pdf",
+
   },
 
   {
@@ -127,6 +167,8 @@ const catalogItems: CatalogItem[] = [
     ],
     category: "Protección personal",
     icon: Footprints,
+    pdf: BOOTS_PDF,
+    fileName: "catalogo-calzado-protekta.pdf",
   },
 
   {
@@ -157,9 +199,7 @@ const catalogItems: CatalogItem[] = [
       "Prendas de seguridad",
     ],
     category: "Protección personal",
-    icon: ShieldCheck,
-    pdf: CHALECOS_PDF,
-    fileName: "catalogo_chalecos.pdf",
+    icon: ShieldCheck, 
   },
 
   {
@@ -190,6 +230,8 @@ const catalogItems: CatalogItem[] = [
     ],
     category: "Señalización vial",
     icon: Construction,
+    pdf: TRAFITAMBOS_PDF,
+    fileName: "catalogo-trafitambos-protekta.pdf",
   },
 
   {
@@ -205,6 +247,8 @@ const catalogItems: CatalogItem[] = [
     ],
     category: "Señalización vial",
     icon: Construction,
+    pdf: BARRERAS_PDF,
+    fileName: "catalogo-barreras-viales.pdf",
   },
 
   {
@@ -235,6 +279,40 @@ const catalogItems: CatalogItem[] = [
     ],
     category: "Equipamiento urbano",
     icon: BookOpen,
+  },
+
+    {
+    id: "goggles",
+    number: "12",
+    title: "Goggles de seguridad",
+    subtitle: "protección visual",
+    description:
+      "Equipo de seguridad ocular para distintos entornos y áreas de trabajo.",
+    products: [
+      "Goggles de seguridad",
+      "Protección",
+    ],
+    category: "Protección personal",
+    icon: Glasses,
+    pdf: GLASSES_PDF,
+    fileName: "catalogo-goggles-protekta.pdf",
+  },
+
+     {
+    id: "bandereros",
+    number: "12",
+    title: "Bandereros",
+    subtitle: "Señalización de obra",
+    description:
+      "Elementos para señalizar obras, desvíos y áreas restringidas.",
+    products: [
+      "Bandereros",
+      "Señalización",
+    ],
+    category: "Protección personal",
+    icon: Glasses,
+    pdf: BANDEREROS_PDF,
+    fileName: "catalogo-bandereros-protekta.pdf",
   },
 ];
 
