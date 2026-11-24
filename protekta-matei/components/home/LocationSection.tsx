@@ -162,7 +162,7 @@ export default function LocationSection() {
                   </p>
 
                   <p className="mt-1 text-sm font-medium">
-                    Lunes — Viernes · 8:00 — 18:00
+                    Lunes — Viernes · 9:00 — 18:00
                   </p>
                 </div>
               </div>
